@@ -85,7 +85,7 @@ class FavDetailFragment : Fragment() {
             baseFabClicked()
         }
         Glide.with(binding.imageView)
-            .load(planet.image)
+            .load(planet.backImage)
             .into(binding.imageView)
         binding.textTitle.text = planet.title
         binding.textDesc.text = planet.desc
