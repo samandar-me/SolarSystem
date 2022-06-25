@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "875755013465",
+    "project_id": "astranomiaapp",
+    "storage_bucket": "astranomiaapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:875755013465:android:00240a687fda2139e7f848",
+        "android_client_info": {
+          "package_name": "com.sdk.planetnew"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "875755013465-kakbkfsltpv10lppmhldkk8fh0qj41h2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBp7U4MGN7APVhZS4URdDIdgjFj9gdr5Ig"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "875755013465-kakbkfsltpv10lppmhldkk8fh0qj41h2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

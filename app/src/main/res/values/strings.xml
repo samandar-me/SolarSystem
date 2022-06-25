@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Astranomiya</string>
+    <string name="ast">Astranomiya</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="bo">Bog\'lanish</string>
+    <string name="saq">Tanlanganlar</string>
+    <string name="other">Boshqa ilovalar</string>
+    <string name="rate">Baholash</string>
+    <string name="telegram">Telegram</string>
+    <string name="com">Aloqa</string>
+    <string name="share">Ulashish</string>
+    <string name="main">Asosiy</string>
+    <string name="saved">Tanlanganlar</string>
+    <string name="action_settings">Settings</string>
+    <string name="light">Light</string>
+    <string name="ko">Koinot</string>
+    <string name="no">Tanlanganlar yo\'q</string>
+    <string name="todo">todo</string>
+    <string name="sv">Saqlandi</string>
+    <string name="nus">Nusxalandi</string>
+    <string name="del">Tanlanganlardan o\'chirildi</string>
+    <string name="ha">Ha</string>
+    <string name="tan">Tanlanganlar o\'chirildi</string>
+    <string name="yoq">Yo\'q</string>
+    <string name="dialog">O\'chirish</string>
+    <string name="och">Tanlanganlarni o\'chirmoqchimisiz?</string>
+    <string name="all">Allaqachon saqlangan</string>
+</resources>
