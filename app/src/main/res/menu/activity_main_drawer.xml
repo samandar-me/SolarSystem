@@ -34,6 +34,11 @@
                     android:icon="@drawable/img_tel"
                     android:title="@string/telegram" />
                 <item
+                    android:id="@+id/nav_channel"
+                    android:onClick="navChannel"
+                    android:icon="@drawable/img_tel"
+                    android:title="@string/koi" />
+                <item
                     android:id="@+id/nav_share"
                     android:onClick="navShare"
                     android:icon="@drawable/ic_baseline_share_24"

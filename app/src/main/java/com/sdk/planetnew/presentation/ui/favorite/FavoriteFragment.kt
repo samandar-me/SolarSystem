@@ -34,7 +34,6 @@ class FavoriteFragment : Fragment() {
     private val binding get() = _binding!!
     private lateinit var viewModel: FavoriteViewModel
     private lateinit var homeAdapter: HomeAdapter
-    private val hashSet = HashSet<Planet>()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -91,7 +90,7 @@ class FavoriteFragment : Fragment() {
                 snack(binding.root, getString(R.string.tan))
                 viewModel.deleteAllNumbers()
             }
-            setNeutralButton(R.string.yoq, null)
+            setNegativeButton(R.string.yoq, null)
             setTitle(R.string.dialog)
             setMessage(R.string.och)
         }.show()

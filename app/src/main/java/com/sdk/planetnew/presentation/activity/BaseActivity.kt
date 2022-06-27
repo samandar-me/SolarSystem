@@ -53,6 +53,13 @@ abstract class BaseActivity : AppCompatActivity() {
         startActivity(intentChooser)
     }
 
+    fun goToChannel() {
+        val intent = Intent(Intent.ACTION_VIEW)
+        intent.data = Uri.parse(Constants.CHANNEL_NAME)
+        val intentChooser = Intent.createChooser(intent, "Launch Telegram")
+        startActivity(intentChooser)
+    }
+
     fun myOtherApps() {
         val intent = Intent(Intent.ACTION_VIEW)
         intent.data = Uri.parse(Constants.MY_APPS)
@@ -72,4 +79,5 @@ abstract class BaseActivity : AppCompatActivity() {
         intent.data = Uri.parse("${Constants.URL}$packageName")
         startActivity(intent)
     }
+
 }

@@ -65,6 +65,11 @@ class MainActivity : BaseActivity() {
         menuItem = item
     }
 
+    fun navChannel(item: MenuItem) {
+        goToChannel()
+        menuItem = item
+    }
+
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
