@@ -14,6 +14,7 @@ import com.bumptech.glide.Glide
 import com.sdk.planetnew.R
 import com.sdk.planetnew.data.model.Number
 import com.sdk.planetnew.data.model.Planet
+import com.sdk.planetnew.data.util.extensions.admob
 import com.sdk.planetnew.databinding.FragmentFavDetailBinding
 import com.sdk.planetnew.domain.database.PlanetDatabase
 import com.sdk.planetnew.domain.favorite.FavDetailRepository
@@ -97,6 +98,7 @@ class FavDetailFragment : Fragment() {
         binding.copyFab.setOnClickListener {
             copyText()
         }
+        admob(binding.admob)
     }
 
     private fun baseFabClicked() {

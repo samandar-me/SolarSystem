@@ -17,6 +17,7 @@ import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.storage.FirebaseStorage
 import com.sdk.planetnew.R
+import com.sdk.planetnew.data.util.extensions.admob
 import com.sdk.planetnew.databinding.FragmentHomeBinding
 import com.sdk.planetnew.presentation.activity.MainActivity
 
@@ -52,6 +53,7 @@ class HomeFragment : Fragment() {
         binding.swipeRefresh.setOnRefreshListener {
             binding.swipeRefresh.isRefreshing = false
         }
+        admob(binding.admob)
     }
 
     private fun observe() {

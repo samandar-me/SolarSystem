@@ -19,6 +19,7 @@ import com.bumptech.glide.request.target.Target
 import com.sdk.planetnew.R
 import com.sdk.planetnew.data.model.Number
 import com.sdk.planetnew.data.model.Planet
+import com.sdk.planetnew.data.util.extensions.admob
 import com.sdk.planetnew.databinding.FragmentDetailBinding
 import com.sdk.planetnew.domain.database.PlanetDatabase
 import com.sdk.planetnew.domain.detail.DetailRepository
@@ -110,6 +111,7 @@ class DetailFragment : Fragment() {
         binding.favFab.setOnClickListener {
             saveToDatabase(planet)
         }
+        admob(binding.admob)
     }
 
     private fun nestedScroll() {

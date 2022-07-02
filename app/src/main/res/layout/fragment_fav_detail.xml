@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/img"
     android:layout_height="match_parent">
 
@@ -108,7 +109,10 @@
             android:id="@+id/baseFab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_marginBottom="35dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
             app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
             android:backgroundTint="@color/orange"
             android:contentDescription="@string/todo"
@@ -116,5 +120,13 @@
             app:tint="@color/white" />
 
     </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/admob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ads" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

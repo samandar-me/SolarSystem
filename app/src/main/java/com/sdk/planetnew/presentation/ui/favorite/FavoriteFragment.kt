@@ -17,6 +17,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.sdk.planetnew.R
 import com.sdk.planetnew.data.model.Planet
+import com.sdk.planetnew.data.util.extensions.admob
 import com.sdk.planetnew.data.util.extensions.snack
 import com.sdk.planetnew.databinding.FragmentFavoriteBinding
 import com.sdk.planetnew.domain.database.PlanetDatabase
@@ -76,6 +77,7 @@ class FavoriteFragment : Fragment() {
             view.findNavController().navigate(R.id.action_nav_favorite_to_favDetailFragment, bundle)
         }
         hideShowFloating()
+        admob(binding.admob)
     }
 
     private fun setupRv() = binding.recyclerView.apply {

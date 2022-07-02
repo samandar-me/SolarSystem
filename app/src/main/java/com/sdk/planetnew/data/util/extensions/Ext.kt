@@ -6,6 +6,9 @@ import android.view.View
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModel
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdView
+import com.google.android.gms.ads.MobileAds
 import com.google.android.material.snackbar.Snackbar
 
 fun Context.toast(text: String) {
@@ -26,4 +29,10 @@ fun ViewModel.log(e: String) {
 
 fun Fragment.snack(v: View, text: String) {
     Snackbar.make(v, text, Snackbar.LENGTH_SHORT).show()
+}
+
+fun Fragment.admob(adView: AdView) {
+    MobileAds.initialize(requireContext()) {}
+    val adRequest = AdRequest.Builder().build()
+    adView.loadAd(adRequest)
 }
